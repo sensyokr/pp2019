@@ -1,0 +1,142 @@
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+@charset "UTF-8";
+*, *:after, *:before { -webkit-box-sizing: border-box !important; box-sizing: border-box !important; list-style: none; }
+html {padding:0; margin:0;}
+a {text-decoration: none !important; outline: none !important; border: none;}
+p {margin:0; padding:0;}
+ul {list-style: none !important; padding: 0; margin: 0;}
+h2,h3,h4,h5 {font-weight: normal; padding:0; margin:0;}
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* =common-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: 'NanumSquareRound', sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background:#fff;
+    position:relative;
+    z-index:999;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-container .title-port {position:absolute; top:70px; left:70px; z-index:9999;}
+.swiper-container .toggle-btn {position:absolute; top:70px; right:70px; z-index:9999;}
+.swiper-container .counter-port {position:absolute; bottom:70px; left:70px; z-index:9999; font-size:24px; font-weight:700;}
+.swiper-container .gototop {position:absolute; bottom:70px; right:70px; z-index:9999;}
+
+.swiper-slide.content-wrap {
+    width:100%;
+    height:100%;
+    display:table;
+}
+.swiper-slide.content-wrap .content-dummy {
+    display:table-cell;
+    width:17%;
+}
+.swiper-slide.content-wrap .content-left {
+    display:table-cell;
+    width:47%;
+    height:auto;
+    padding-left:290px;
+    box-sizing:border-box;
+    vertical-align:middle;
+    text-align:left;
+}
+
+.swiper-slide.content-wrap .content-left span {
+    font-size:20px;
+    font-weight:700;
+    color:#333;
+}
+
+.swiper-slide.content-wrap .content-left p {
+    font-size:18px;
+    font-weight:400;
+    color:#333;
+    line-height:150%;
+    margin-top:25px;
+    display:block;
+}
+
+.swiper-slide.content-wrap .content-right {
+    display:table-cell;
+    width:37%;
+    height:100%;
+    vertical-align:middle;
+    text-align:center;
+    position:relative;
+}
+
+.swiper-slide.content-wrap .content-right .img-visual {
+    position:absolute;
+    width:100%;
+    top:50%;
+    margin-top:-282px;
+}
+
+.swiper-slide.content-wrap .content-right .img-visual img {
+    margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
