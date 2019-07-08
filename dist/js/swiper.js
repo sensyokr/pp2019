@@ -3536,7 +3536,7 @@
     direction: 'horizontal',
     touchEventsTarget: 'container',
     initialSlide: 0,
-    speed: 300,
+    speed: 1000,
     //
     preventInteractionOnTransition: false,
 

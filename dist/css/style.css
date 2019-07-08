@@ -1,42 +1,43 @@
 @import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
 @charset "UTF-8";
-*, *:after, *:before { -webkit-box-sizing: border-box !important; box-sizing: border-box !important; list-style: none; }
+*, *:after, *:before { -webkit-box-sizing: border-box !important; box-sizing: border-box !important;}
 html {padding:0; margin:0;}
 a {text-decoration: none !important; outline: none !important; border: none;}
 p {margin:0; padding:0;}
 ul {list-style: none !important; padding: 0; margin: 0;}
 h2,h3,h4,h5 {font-weight: normal; padding:0; margin:0;}
-
-/* --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
-/* =common-------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
 html, body {
     position: relative;
     height: 100%;
 }
+
 body {
-    background: #eee;
+    background: #fff;
     font-family: 'NanumSquareRound', sans-serif;
     font-size: 14px;
     color:#000;
     margin: 0;
     padding: 0;
 }
+
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* =common-------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
 .swiper-container {
     width: 100%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background:#fff;
     position:relative;
     z-index:999;
 }
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,12 +52,16 @@ body {
     -webkit-align-items: center;
     align-items: center;
 }
-
 .swiper-container .title-port {position:absolute; top:70px; left:70px; z-index:9999;}
-.swiper-container .toggle-btn {position:absolute; top:70px; right:70px; z-index:9999;}
+.swiper-container .title-port:hover {cursor:pointer;}
+.swiper-container .title-port img {width:50%; height:auto;}
+.swiper-container .toggle-btn {position:absolute; top:70px; right:70px; z-index:9999; width:30px; height:30px;}
+.swiper-container .toggle-btn:hover {cursor:pointer;}
+.swiper-container .toggle-btn img {width:100%; height:auto;}
 .swiper-container .counter-port {position:absolute; bottom:70px; left:70px; z-index:9999; font-size:24px; font-weight:700;}
+.swiper-container .counter-port-line {position:absolute; bottom:88px; left:150px; width:100px; height:1px; background:#333;}
 .swiper-container .gototop {position:absolute; bottom:70px; right:70px; z-index:9999;}
-
+.swiper-container .gototop:hover {cursor:pointer;}
 .swiper-slide.content-wrap {
     width:100%;
     height:100%;
@@ -75,13 +80,11 @@ body {
     vertical-align:middle;
     text-align:left;
 }
-
 .swiper-slide.content-wrap .content-left span {
     font-size:20px;
     font-weight:700;
     color:#333;
 }
-
 .swiper-slide.content-wrap .content-left p {
     font-size:18px;
     font-weight:400;
@@ -90,7 +93,18 @@ body {
     margin-top:25px;
     display:block;
 }
-
+.swiper-slide.content-wrap .content-left a {
+    display:inline-block;
+    font-size:16px;
+    color:#333;
+    margin-top:80px;
+}
+.swiper-slide.content-wrap .content-left a > img {
+    margin-left:30px;
+}
+.swiper-slide.content-wrap .content-left a:hover {
+    cursor:pointer;
+}
 .swiper-slide.content-wrap .content-right {
     display:table-cell;
     width:37%;
@@ -99,28 +113,23 @@ body {
     text-align:center;
     position:relative;
 }
-
 .swiper-slide.content-wrap .content-right .img-visual {
     position:absolute;
     width:100%;
     top:50%;
-    margin-top:-282px;
+    margin-top:-360px;
 }
-
 .swiper-slide.content-wrap .content-right .img-visual img {
     margin:0 auto;
+    width:50%;
+    height:auto;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* =project------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
 
 
 
