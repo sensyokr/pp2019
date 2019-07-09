@@ -82,7 +82,7 @@ body {
 }
 .swiper-slide.content-wrap .content-left span {
     font-size:20px;
-    font-weight:700;
+    font-weight:800;
     color:#333;
 }
 .swiper-slide.content-wrap .content-left p {
@@ -130,6 +130,131 @@ body {
 /* =project------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------- */
+
+.header-wrap {
+    width:100%;
+    height:460px;
+    background-size:cover;
+    background-position:center center;
+    position:relative;
+}
+/* =backbround-image---------------------------------------------------------------- */
+.header-wrap.project01 {background-image:url("../../img/project01/visual.png");}
+.header-wrap.project02 {}
+.header-wrap.project03 {}
+.header-wrap.project04 {}
+
+.header-wrap .visual-dim {
+    position:absolute;
+    width:100%;
+    height:460px;
+    opacity:0.5;
+    top:0;
+    left:0;
+    z-index:999;
+}
+/* =background-di------------------------------------------------------------------- */
+.header-wrap .visual-dim.project01 {background:#007989;}
+
+.header-wrap .cont-wrap {
+    width:100%;
+    height:460px;
+    padding:70px;
+    box-sizing:border-box;
+    position:relative;
+    z-index:9999;
+}
+.header-wrap .cont-wrap .sub-title {
+    position:absolute;
+    top:70px;
+    left:70px;
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+}
+.header-wrap .cont-wrap .sub-personal {
+    position:absolute;
+    top:170px;
+    left:70px;
+    color:#fff;
+}
+.header-wrap .cont-wrap .sub-personal p {
+    font-size:30px;
+    color:#fff;
+    font-weight:700;
+    display:inline-block;
+    margin-right:10px;
+}
+.header-wrap .cont-wrap ul.sub-property {
+    position:absolute;
+    top:70px;
+    right:70px;
+}
+.header-wrap .cont-wrap ul.sub-property li {
+    width:34px;
+    height:26px;
+    border:1px solid #fff;
+    border-radius:6px;
+    color:#fff;
+    font-size:16px;
+    float:left;
+    text-align:center;
+    line-height:26px;
+    margin-left:8px;
+}
+.header-wrap .cont-wrap .sub-date {
+    position:absolute;
+    right:70px;
+    bottom:70px;
+    font-size:15px;
+    color:#fff;
+    text-decoration:underline;
+    font-weight:200;
+}
+.header-wrap .cont-wrap .sub-overview {
+    position:absolute;
+    left:70px;
+    bottom:70px;
+}
+.header-wrap .cont-wrap .sub-overview p.over-title {
+    font-size:15px;
+    color:#fff;
+    margin-bottom:15px;
+}
+.header-wrap .cont-wrap .sub-overview p.over-text {
+    font-size:14px;
+    font-weight:300;
+    color:#fff;
+    opacity:0.7;
+    line-height:150%;
+}
+.content-wrap {
+    width:100%;
+    height:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
