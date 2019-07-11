@@ -13,8 +13,8 @@
     <div class="swiper-container">
         <div class="float-menu">
             <div class="title-port"><img src="img/title.png"></div>
-            <div class="toggle-btn"><img src="img/toggle_section.png"></div>
-            <div class="counter-port">01</div>
+            <div id="sideMenuBtn" class="toggle-btn"><img src="img/toggle_section.png"></div>
+            <div id="counterIndex" class="counter-port">01</div>
             <div class="counter-port-line"></div>
             <div class="gototop"><img src="img/gototop.png"></div>
         </div>
@@ -89,22 +89,65 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-
+    <div class="side-menu">
+        <div id="sideMenuCloseBtn" class="menu_close">닫기</div>
+        dkdkdkd
+    </div>
     <!-- Swiper JS -->
     <script src="dist/js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 30,
-        mousewheel: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-    });
+        var counterIndex = document.getElementById("counterIndex");
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                paginationBulletRender: function (index, className) {
+                    return '<div class="' + className + '" data-index="' + swiper + '"><span class="circle"></span><div class="tooltip">블라블라</div></div>';
+                   // return '<span class="' + className + '">' + (index + 1) + '</span>';
+                }
+//                renderBullet: function (swiper, current, total, className) {
+//                    return '<div class="' + className + '" data-index="' + swiper + '"><span class="circle"></span><div class="tooltip">블라블라</div></div>';
+//                },
+                //bulletActiveClass: 'custom-bullet-active',
+               
+            },
+           
+            on: {
+                slideChange: function() { 
+                    if(this.activeIndex < 10){
+                         counterIndex.innerHTML = "0" + ( this.activeIndex + 1 );
+                    } else {
+                        counterIndex.innerHTML = ( this.activeIndex + 1 );
+                    }
+
+
+                },
+                 
+            },
+            
+           
+        });
+        
+        var sideMenuBtn = document.getElementById("sideMenuBtn");
+        var sideMenu = document.querySelector(".side-menu");
+        var sideMenuCloseBtn = document.getElementById("sideMenuCloseBtn");
+        
+        sideMenuBtn.addEventListener("click", function(){
+            if(sideMenuBtn.classList.contains("open") === false){
+                 sideMenu.classList.add("open");
+            }
+        });
+        
+        sideMenuCloseBtn.addEventListener("click", function(){
+             sideMenu.classList.remove("open");
+        });
+        
     </script>
 </body>
 </html>
