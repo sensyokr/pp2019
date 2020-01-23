@@ -29,10 +29,10 @@
         windowHalfX = WIDTH / 2;
         windowHalfY = HEIGHT / 2;
 
-        fieldOfView = 100;
+        fieldOfView = 80;
         aspectRatio = WIDTH / HEIGHT;
-        nearPlane = 10;
-        farPlane = 6000;
+        nearPlane = 20;
+        farPlane = 5500;
 
         /*  fieldOfView — Camera frustum vertical field of view.
     aspectRatio — Camera frustum aspect ratio.
@@ -62,7 +62,7 @@
 
         geometry = new THREE.Geometry(); /* NO ONE SAID ANYTHING ABOUT MATH! UGH!   */
 
-        particleCount = 10000; /* Leagues under the sea */
+        particleCount = 15000; /* Leagues under the sea */
 
         /*  Hope you took your motion sickness pills;
     We're about to get loopy.   */
