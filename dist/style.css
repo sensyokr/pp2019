@@ -1,0 +1,143 @@
+/* ---- reset ---- */
+
+ul, li {list-style:none;}
+img {
+    margin:0;
+    padding:0;
+}
+
+
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+background:#000;
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: fixed
+      top:0;;
+  width: 100%;
+  height: 620px;
+  background-color: #000000;
+}
+
+
+
+
+.header {
+    display:inline-block;
+    width:100%;
+    height:80px;
+    text-align:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+}
+
+.header .header_cont {
+    width:100%;
+    height:80px;
+    margin:0 auto;
+    padding:0 60px;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.header .header_cont .ci {
+    width:150px;
+    height:20px;
+    float:left;
+    margin-top:20px;
+}
+
+.header .header_cont ul {
+    float:right;
+    margin-top:25px;
+}
+.header .header_cont ul li {
+    float:left;
+    font-size:14px;
+    margin-left:40px;
+    color:#fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header .header_cont .ci img.bi_none {
+    display:none;
+    width:150px;
+    height:20px;
+    float:left;
+    margin-top:15px;
+}
+
+.header.black {
+    display:inline-block;
+    width:100%;
+    height:60px;
+    text-align:center;
+    background:#fff;
+    border-bottom:1px solid #efefef;
+}
+
+.header.black .header_cont .ci img.bi_show {
+    display:none;
+}
+
+.header.black .header_cont .ci img.bi_none {
+    display:block;
+    margin-top:0;
+}
+
+.header.black .header_cont {
+    width:100%;
+    height:60px;
+    margin:0 auto;
+    padding:0 60px;
+    box-sizing:border-box;
+}
+
+.header.black .header_cont ul li {
+    color:#333;
+}
+
+.cont01 {
+
+}
+.cont01 img {
+    width:100%;
+    height:auto;
+}
+
+
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:40px;
+    text-align:center;
+    font-weight:bold;
+    margin:240px;
+    position:absolute;
+    top:0;
+    left:500px;
+    z-index:9999;
+    color:#fff;
+}
+
+.title > p {
+    font-size:20px;
+    color:#fff;
+    font-weight:100;
+}
+
+li.lang {
+    width:60px;
+    height:32px;
+    border-radius:16px;
+    border:1px solid #fff;
+}
