@@ -27,7 +27,9 @@ background:#000;
   background-color: #000000;
 }
 
-
+#particles-js:hover {
+    cursor:pointer;
+}
 
 
 .header {
