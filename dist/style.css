@@ -20,8 +20,8 @@ background:#000;
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: fixed
-      top:0;;
+  position: fixed;
+      top:0;
   width: 100%;
   height: 620px;
   background-color: #000000;
@@ -30,7 +30,6 @@ background:#000;
 #particles-js:hover {
     cursor:pointer;
 }
-
 
 .header {
     display:inline-block;
