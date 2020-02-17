@@ -114,6 +114,9 @@ background:#000;
 .cont01 img {
     width:100%;
     height:auto;
+    margin-top:620px;
+    position:relative;
+    z-index:9999;
 }
 
 
@@ -124,7 +127,7 @@ background:#000;
     font-weight:bold;
     margin:240px;
     position:absolute;
-    top:0;
+    top:30px;
     left:500px;
     z-index:9999;
     color:#fff;
